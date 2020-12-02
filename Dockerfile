@@ -1,4 +1,4 @@
-FROM balenalib/raspberry-pi-debian-python:latest
+FROM python:latest
 
 WORKDIR /usr/src/app
 
@@ -9,6 +9,7 @@ RUN apt-get update -qq && \
     sh get-docker.sh
 
 COPY requirements.txt ./
+RUN pip install --upgrade pip
 RUN pip install --no-cache-dir -r requirements.txt
 
 # Copy files into place
