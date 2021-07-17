@@ -1,4 +1,7 @@
-# docker2mqtt-rpi
+# DEPRECATED
+
+See https://github.com/dgmltn/containers
+
 
 A simple Raspberry Pi rebuild of https://github.com/skullydazed/docker2mqtt . For documentation on environment, look there.
 
